@@ -1,4 +1,4 @@
-CREATE TABLE `sap-characteristic-sql-value-discription`
+CREATE TABLE `sap-characteristic-value-discription`
 (
              `Delete_mc`                     tinyint(1) DEFAULT NULL,
              `Update_mc`                     tinyint(1) DEFAULT NULL,
@@ -12,6 +12,6 @@ CREATE TABLE `sap-characteristic-sql-value-discription`
              `KeyDate`                       date DEFAULT NULL,
              `CharcLastChangedDateTime`      datetime DEFAULT NULL,
     PRIMARY KEY (`CharcInternalID`, `CharcValuePositionNumber`, `Language`),
-    CONSTRAINT (`CharcInternalID_fk`) FOREIGN KEY (`CharcInternalID_fk`) REFERENCES `sap-characteristic-sql-characteristic-data` (`CharcInternalID_fk`)
+    CONSTRAINT (`CharcInternalID_fk`) FOREIGN KEY (`CharcInternalID`) REFERENCES `sap-characteristic-characteristic-data` (`CharcInternalID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

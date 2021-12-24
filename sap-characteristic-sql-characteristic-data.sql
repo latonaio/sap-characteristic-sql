@@ -1,4 +1,4 @@
-CREATE TABLE `sap-characteristic-sql-characteristic-data`
+CREATE TABLE `sap-characteristic-characteristic-data`
 (
              `Delete_mc`                       tinyint(1) DEFAULT NULL,
              `Update_mc`                       tinyint(1) DEFAULT NULL,

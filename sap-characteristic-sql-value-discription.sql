@@ -1,10 +1,10 @@
 CREATE TABLE `sap-characteristic-value-discription`
 (
+             `CharcInternalID`               varchar(10) NOT NULL,
+             `CharcValuePositionNumber`      varchar(4) NOT NULL,
+             `Language`                      varchar(2) NOT NULL,
              `Delete_mc`                     tinyint(1) DEFAULT NULL,
              `Update_mc`                     tinyint(1) DEFAULT NULL,
-             `CharcInternalID`               varchar(10) DEFAULT NULL,
-             `CharcValuePositionNumber`      varchar(4) DEFAULT NULL,
-             `Language`                      varchar(2) DEFAULT NULL,
              `CharcValuePositionNumber`      varchar(4) DEFAULT NULL,
              `ChangeNumber`                  varchar(12) DEFAULT NULL,
              `ValidityStartDate`             date DEFAULT NULL,

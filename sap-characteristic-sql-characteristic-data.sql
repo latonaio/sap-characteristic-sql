@@ -1,12 +1,12 @@
 CREATE TABLE `sap-characteristic-characteristic-data`
 (
+             `CharcInternalID`                 varchar(10) NOT NULL,
              `Delete_mc`                       tinyint(1) DEFAULT NULL,
              `Update_mc`                       tinyint(1) DEFAULT NULL,
              `to_CharacteristicDesc_oc`        tinyint(1) DEFAULT NULL,
              `to_CharacteristicReference_oc`   tinyint(1) DEFAULT NULL,
              `to_CharacteristicRestriction_oc` tinyint(1) DEFAULT NULL,
              `to_CharacteristicValue_oc`       tinyint(1) DEFAULT NULL,
-             `CharcInternalID`                 varchar(10) DEFAULT NULL,
              `Characteristic`                  varchar(30) DEFAULT NULL,
              `CharcStatus`                     varchar(1) DEFAULT NULL,
              `CharcStatusName`                 varchar(20) DEFAULT NULL,

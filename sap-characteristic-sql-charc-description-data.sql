@@ -11,6 +11,6 @@ CREATE TABLE `sap_characteristic_charc_description_data`
              `KeyDate`                     varchar(80) DEFAULT NULL,
              `CharcLastChangedDateTime`    varchar(80) DEFAULT NULL,
     PRIMARY KEY (`CharcInternalID`, `Language`),
-    CONSTRAINT (`SAPCharacteristicCharcDescriptionData_fk`) FOREIGN KEY (CharcInternalID`) REFERENCES `sap_characteristic_characteristic_data` (`CharcInternalID`)
+    CONSTRAINT `SAPCharacteristicCharcDescriptionData_fk` FOREIGN KEY (`CharcInternalID`) REFERENCES `sap_characteristic_characteristic_data` (`CharcInternalID`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

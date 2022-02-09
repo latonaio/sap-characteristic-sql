@@ -6,10 +6,10 @@ CREATE TABLE `sap_characteristic_value_description_data`
              `Delete_mc`                     tinyint(1) DEFAULT NULL,
              `Update_mc`                     tinyint(1) DEFAULT NULL,
              `ChangeNumber`                  varchar(12) DEFAULT NULL,
-             `ValidityStartDate`             date DEFAULT NULL,
-             `ValidityEndDate`               date DEFAULT NULL,
-             `KeyDate`                       date DEFAULT NULL,
-             `CharcLastChangedDateTime`      datetime DEFAULT NULL,
+             `ValidityStartDate`             varchar(80) DEFAULT NULL,
+             `ValidityEndDate`               varchar(80) DEFAULT NULL,
+             `KeyDate`                       varchar(80) DEFAULT NULL,
+             `CharcLastChangedDateTime`      varchar(80) DEFAULT NULL,
     PRIMARY KEY (`CharcInternalID`, `CharcValuePositionNumber`, `Language`),
     CONSTRAINT `SAPCharacteristicValueDescriptionData_fk` FOREIGN KEY (`CharcInternalID`) REFERENCES `sap_characteristic_characteristic_data` (`CharcInternalID`)
 ) ENGINE = InnoDB
